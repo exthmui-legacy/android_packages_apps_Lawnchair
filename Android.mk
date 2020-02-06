@@ -7,6 +7,7 @@ LOCAL_SRC_FILES := Lawnchair.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep Launcher3QuickStepGo
 LOCAL_DEX_PREOPT := false
 LOCAL_REQUIRED_MODULES := \
 	lawnchair.permissions \
