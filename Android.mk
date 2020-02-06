@@ -23,6 +23,6 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := lawnchair.hiddenapi_whitelist
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
-LOCAL_SRC_FILES := permissions/lawnchair-hiddenapi-package-whitelist.xml
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/sysconfig
+LOCAL_SRC_FILES := sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 include $(BUILD_PREBUILT)
