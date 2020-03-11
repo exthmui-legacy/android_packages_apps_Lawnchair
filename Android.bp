@@ -1,0 +1,38 @@
+
+android_app_import {
+    name: "Lawnchair",
+
+    privileged: true,
+    dex_preopt: {
+        enabled: false,
+    },
+
+    overrides: [
+        "Home",
+        "Launcher2",
+        "Launcher3",
+        "Launcher3QuickStep",
+        "Launcher3QuickStepGo",
+    ],
+    required: [
+        "privapp_permissions_lawnchair",
+        "hiddenapi_package_whitelist_lawnchair",
+    ],
+    apk: "Lawnchair.apk",
+    presigned: true,
+
+}
+
+prebuilt_etc {
+    name: "privapp_permissions_lawnchair",
+    src: "privapp-permissions-lawnchair.xml",
+    sub_dir: "permissions",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "hiddenapi_package_whitelist_lawnchair",
+    src: "hiddenapi-package-whitelist-lawnchair.xml",
+    sub_dir: "sysconfig",
+    filename_from_src: true,
+}
