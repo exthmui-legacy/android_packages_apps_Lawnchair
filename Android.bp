@@ -32,7 +32,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "hiddenapi_package_whitelist_lawnchair",
-    src: "hiddenapi-package-whitelist-lawnchair.xml",
+    src: "lawnchair-hiddenapi-package-whitelist.xml",
     sub_dir: "sysconfig",
     filename_from_src: true,
 }
